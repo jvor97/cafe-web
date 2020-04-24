@@ -4,14 +4,13 @@ import Typography from "@material-ui/core/Typography";
 
 import Navbar from "../components/Navbar";
 import SectionPhoto from "../components/SectionPhoto";
-import Arrow from "../components/Arrow";
 
-const Home = () => {
+const Home = ({ justifyCont }) => {
   return (
     <Paper style={{ height: "100vh" }}>
       <Navbar />
-      <div className="flex-middle">
-        <SectionPhoto image="../images/nomad.jpg" margin="ml-8" />
+      <div className={`vertical-align-middle ${justifyCont}`}>
+        <SectionPhoto image="../images/nomad.jpg" />
         <div style={{ width: "50%", marginLeft: "2.8rem" }}>
           <Typography variant="h1">Cafe Nomad</Typography>
         </div>

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
 }
 
 code {
@@ -24,18 +25,21 @@ a:hover {
   border-bottom: 2px solid #004a2f;
 }
 
-.ml-8 {
-  margin-left: 8.4rem;
-}
-
-.mr-8 {
-  margin-right: 8.4rem;
-}
-
-.flex-middle {
+.vertical-align-middle {
   display: flex;
   align-items: center;
   height: 100%;
+  position: relative;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  margin-left: 8.4rem;
+}
+
+.flex-end {
+  justify-content: flex-end;
+  margin-right: 8.4rem;
 }
 
 .img-cover {
@@ -84,4 +88,25 @@ a:hover {
   top: 12px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   transform: rotate(-45deg);
+}
+
+.h1-right::after {
+  display: block;
+  width: 200px;
+  background-color: #004a2f;
+  height: 3px;
+  content: " ";
+  float: right;
+  margin-right: -1rem;
+  margin-top: -0.5rem;
+}
+
+.h1-left::after {
+  display: block;
+  width: 200px;
+  background-color: #004a2f;
+  height: 3px;
+  content: " ";
+  margin-left: -1rem;
+  margin-top: -0.5rem;
 }

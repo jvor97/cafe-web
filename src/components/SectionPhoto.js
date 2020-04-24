@@ -5,18 +5,30 @@ import CardMedia from "@material-ui/core/CardMedia";
 
 const styles = theme => ({
   mainPhotoDiv: {
-    border: "15px solid #004A2F",
+    width: "calc(100% - 30px)",
+    height: "calc(100% - 30px)",
+    position: "absolute",
+    left: "15px",
+    top: "15px",
+    zIndex: 3
+  },
+  photoBackground: {
     height: "80%",
-    width: "27%"
+    width: "30%",
+    background: "#004A2F",
+    zIndex: 1,
+    position: "relative"
   }
 });
 
-const SectionPhoto = ({ classes, image, margin,...props }) => {
+const SectionPhoto2 = ({ classes, image, ...props }) => {
   return (
-    <div className={`${classes.mainPhotoDiv} ${margin}`}>
-      <img src={image} className="img-cover" />
+    <div className={classes.photoBackground}>
+      <div className={classes.mainPhotoDiv}>
+        <img src={image} className="img-cover" />
+      </div>
     </div>
   );
 };
 
-export default withStyles(styles)(SectionPhoto);
+export default withStyles(styles)(SectionPhoto2);
