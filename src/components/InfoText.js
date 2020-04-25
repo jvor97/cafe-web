@@ -20,15 +20,16 @@ const styles = theme => ({
     padding: "2rem",
     display: "block",
     textAlign: "initial",
-    paddingTop: 0
+    paddingTop: 0,
+    whiteSpace: "pre-wrap"
   }
 });
 
-const InfoText2 = ({ classes, title, size, text, titlePosition, hClass }) => {
+const InfoText2 = ({ classes, title, size, text, titleStyle, hClass }) => {
   return (
     <div style={{ marginRight: "-15px", zIndex: 2 }}>
       <div className={classes.textDiv} style={size}>
-        <Typography variant="h1" className={hClass} style={titlePosition}>
+        <Typography variant="h1" className={hClass} style={titleStyle}>
           {title.toUpperCase()}
         </Typography>
         <Typography variant="div" className={classes.text}>

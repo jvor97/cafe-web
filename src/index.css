@@ -98,7 +98,7 @@ a:hover {
   content: " ";
   float: right;
   margin-right: -1rem;
-  margin-top: -0.5rem;
+  margin-top: 0.5rem;
 }
 
 .h1-left::after {
@@ -108,5 +108,5 @@ a:hover {
   height: 3px;
   content: " ";
   margin-left: -1rem;
-  margin-top: -0.5rem;
+  margin-top: 0.5rem;
 }

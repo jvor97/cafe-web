@@ -6,6 +6,7 @@ import Cafe from "./views/Cafe";
 import Comida from "./views/Comida";
 import theme from "./muiTheme";
 import Espacio from "./views/Espacio";
+import Contact from "./views/Contact";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Cafe justifyCont="flex-end" />
         <Comida justifyCont="flex-start" />
         <Espacio justifyCont="flex-end" />
+        <Contact />
+        <footer style={{ background: "#004A2F", paddingBottom: "1rem" }}>
+          © Cafe Nomad
+        </footer>
       </div>
     </ThemeProvider>
   );
