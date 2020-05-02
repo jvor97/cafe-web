@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import SectionPhoto from "../components/SectionPhoto";
 import InfoText from "../components/InfoText";
 import FilmPhoto from "../components/FilmPhoto";
+import Arrow from "../components/Arrow/Arrow";
 
 const Espacio = ({ justifyCont }) => {
   const size = {
@@ -32,13 +33,14 @@ const Espacio = ({ justifyCont }) => {
           photos="../images/coffe/coffe"
           position={{ left: 0, bottom: "5%" }}
         />
-        {/* <div style={{ width: "50%", marginLeft: "2.8rem" }}> */}
-        {/* <Typography variant="h1">Cafe Nomad</Typography>
-        </div> */}
-        {/* <div> */}
-        {/* <InfoText size={size} title="CAFE" />
-          <SectionPhoto image="../images/coffe/coffe-main.jpg" />
-        </div> */}
+
+        <Arrow
+          style={{
+            transform: "rotate(90deg) translate(35.5%)",
+            top: 0,
+            left: 0
+          }}
+        />
       </div>
       {/* <Arrow /> */}
     </Paper>

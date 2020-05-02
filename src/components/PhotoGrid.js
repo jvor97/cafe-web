@@ -28,24 +28,12 @@ const PhotoGrid = ({
   ...props
 }) => {
   return (
-    // <Grid container justify="center" spacing={3} xs={12} sm={3}>
-    //   {[1, 2, 3, 4, 5].map(value => (
-    //     <Grid key={value} item direction="row" justify="flex-start">
-    //       <div style={{ maxHeight: "20rem" }}>
-    //         <img
-    //           src={`../images/footer/foot${value}.jpg`}
-    //           className="img-cover"
-    //         />
-    //       </div>
-    //     </Grid>
-    //   ))}
-    // </Grid>
     <div>
       <GridList
         className={classes.gridList}
         cols={5}
         spacing={12}
-        style={{ background: "#004A2F", padding: "1rem 0", marginTop: "7rem" }}
+        style={{ background: "#004A2F", padding: "1rem 0", margin: 0 }}
       >
         {[1, 2, 3, 4, 5].map(num => (
           <GridListTile key={num} style={{ height: "25rem" }}>

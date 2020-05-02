@@ -4,6 +4,8 @@ import Paper from "@material-ui/core/Paper";
 
 import InfoText from "../components/InfoText";
 import PhotoGrid from "../components/PhotoGrid";
+import ArrowShort from "../components/Arrow/ArrowShort";
+import SocialMediaIcons from "../components/UI/SocialMediaIcons";
 
 const styles = theme => ({
   mainPhotoDiv: {
@@ -33,11 +35,24 @@ const Contact = ({ classes, justifyCont, ...props }) => {
     "lun.-vie.: 8:30–21:00 \nvie.-sab.: 8:30–00:00 \ndom.: 8:30-21.00 \n\nRESERVACIONES: \n610 56 23 90 \nmanager@cafenomad.com";
 
   return (
-    <Paper>
-      <div className="vertical-align-middle" style={{ margin: "5% 0" }}>
+    <Paper style={{ position: "relative" }} elevation={0}>
+      <div className="vertical-align-middle" style={{ padding: "5% 0" }}>
         <div className={classes.photoBackground}>
           <div className={classes.mainPhotoDiv}>
-            <img src="../images/nomad.jpg" className="img-cover" />
+            <div className="img-cover">
+              <div className="img-cover">
+                <iframe
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=calle%20de%20la%20cruz&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  className="img-cover"
+                ></iframe>
+                <a href="https://www.embedgooglemap.net"></a>
+              </div>
+            </div>
           </div>
         </div>
         <InfoText
@@ -45,7 +60,17 @@ const Contact = ({ classes, justifyCont, ...props }) => {
           size={size}
           text={text}
           hClass="h1-left"
-          titleStyle={{ fontSize: "190%" }}
+          titleStyle={{ fontSize: "190%", whiteSpace: "nowrap" }}
+        />
+        <ArrowShort
+          style={{
+            transform: "rotate(90deg) translate(35.5%)",
+            top: "-3%",
+            right: "-3%"
+          }}
+        />
+        <SocialMediaIcons
+          style={{ right: 0, bottom: 0, marginRight: "1.8%" }}
         />
       </div>
       <PhotoGrid />

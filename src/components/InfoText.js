@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 
 import Navbar from "../components/Navbar";
 import SectionPhoto from "../components/SectionPhoto";
-import Arrow from "../components/Arrow";
+import Arrow from "./Arrow/Arrow";
 
 import { withStyles } from "@material-ui/styles";
 
