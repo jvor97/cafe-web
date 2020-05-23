@@ -5,7 +5,7 @@ import { withStyles } from "@material-ui/core/styles";
 
 import Navbar from "../components/Navbar";
 import SectionPhoto from "../components/SectionPhoto";
-import ArrowShort from "../components/Arrow/ArrowShort";
+import ArrowShort from "../components/UI/Arrow/ArrowShort";
 import HorizontalLines from "../components/UI/HorizontalLines";
 
 const styles = theme => ({
@@ -21,10 +21,13 @@ const styles = theme => ({
 
 const Home = ({ classes, justifyCont }) => {
   return (
-    <Paper style={{ height: "100vh" }}>
+    <Paper>
       <Navbar />
       <HorizontalLines />
-      <div className={`vertical-align-middle ${justifyCont}`}>
+      <div
+        className={`vertical-align-middle ${justifyCont}`}
+        style={{ height: "100vh", marginTop: "-96px" }}
+      >
         <SectionPhoto image="../images/nomad.jpg" />
         <div style={{ width: "50%", marginLeft: "2.8rem" }}>
           <Typography variant="h1">Cafe Nomad</Typography>

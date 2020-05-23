@@ -5,8 +5,6 @@ import Hidden from "@material-ui/core/Hidden";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Container from "@material-ui/core/Container";
-// import AppBar from "@material-ui/core/AppBar";
-// import Paper from "@material-ui/core/Paper";
 import Toolbar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
@@ -27,15 +25,16 @@ const styles = theme => ({
     top: 0,
     right: 0,
     background: "#F0EFEA",
-    height: "6rem"
+    height: "6rem",
+    zIndex: 9999
   }
 });
 
-const Navbar = ({ classes, props }) => {
+const Navbar = ({ classes, ...props }) => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   return (
-    <Container>
+    <Container style={{ height: "6rem" }}>
       <Toolbar className={classes.navbar}>
         <Hidden only={["lg", "xl", "md"]}>
           <IconButton onClick={event => setAnchorElNav(event.currentTarget)}>

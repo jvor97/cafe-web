@@ -1,11 +1,5 @@
 import React from "react";
-import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-
-import Navbar from "../components/Navbar";
-import SectionPhoto from "../components/SectionPhoto";
-import Arrow from "./Arrow/Arrow";
 
 import { withStyles } from "@material-ui/styles";
 

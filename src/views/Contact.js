@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 
 import InfoText from "../components/InfoText";
 import PhotoGrid from "../components/PhotoGrid";
-import ArrowShort from "../components/Arrow/ArrowShort";
+import ArrowShort from "../components/UI/Arrow/ArrowShort";
 import SocialMediaIcons from "../components/UI/SocialMediaIcons";
 
 const styles = theme => ({
@@ -21,7 +21,8 @@ const styles = theme => ({
     width: "40rem",
     background: "#004A2F",
     zIndex: 1,
-    position: "relative"
+    position: "relative",
+    marginLeft: "-15px"
   }
 });
 
@@ -35,7 +36,7 @@ const Contact = ({ classes, justifyCont, ...props }) => {
     "lun.-vie.: 8:30–21:00 \nvie.-sab.: 8:30–00:00 \ndom.: 8:30-21.00 \n\nRESERVACIONES: \n610 56 23 90 \nmanager@cafenomad.com";
 
   return (
-    <Paper style={{ position: "relative" }} elevation={0}>
+    <Paper style={{ position: "relative" }} elevation={0} id="contacto">
       <div className="vertical-align-middle" style={{ padding: "5% 0" }}>
         <div className={classes.photoBackground}>
           <div className={classes.mainPhotoDiv}>
@@ -49,6 +50,7 @@ const Contact = ({ classes, justifyCont, ...props }) => {
                   marginheight="0"
                   marginwidth="0"
                   className="img-cover"
+                  title="map"
                 ></iframe>
                 <a href="https://www.embedgooglemap.net"></a>
               </div>

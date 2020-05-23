@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import SectionPhoto from "../components/SectionPhoto";
 import InfoText from "../components/InfoText";
 import FilmPhoto from "../components/FilmPhoto";
-import Arrow from "../components/Arrow/Arrow";
+import Arrow from "../components/UI/Arrow/Arrow";
 
 const Cafe = ({ justifyCont }) => {
   const size = {

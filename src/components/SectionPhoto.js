@@ -1,7 +1,5 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
 
 const styles = theme => ({
   mainPhotoDiv: {
@@ -25,7 +23,7 @@ const SectionPhoto2 = ({ classes, image, ...props }) => {
   return (
     <div className={classes.photoBackground}>
       <div className={classes.mainPhotoDiv}>
-        <img src={image} className="img-cover" />
+        <img src={image} className="img-cover" alt=''/>
       </div>
     </div>
   );

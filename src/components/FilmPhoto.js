@@ -1,6 +1,5 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 
 const styles = theme => ({
@@ -35,10 +34,10 @@ const FilmPhoto = ({
         style={rotateBox ? rotateBox : rotate}
       >
         <Box pr={2} className={classes.innerBox}>
-          <img src={`${photos}3.jpg`} className="img-cover" style={rotate} />
+          <img src={`${photos}3.jpg`} className="img-cover" style={rotate} alt='' />
         </Box>
         <Box className={classes.innerBox} pr={4.4}>
-          <img src={`${photos}2.jpg`} className="img-cover" style={rotate} />
+          <img src={`${photos}2.jpg`} className="img-cover" style={rotate} alt='' />
         </Box>
         <Box
           className={classes.innerBox}
@@ -46,7 +45,7 @@ const FilmPhoto = ({
             transform: "scale(1.3)"
           }}
         >
-          <img src={`${photos}1.jpg`} className="img-cover" style={rotate} />
+          <img src={`${photos}1.jpg`} className="img-cover" style={rotate} alt='' />
         </Box>
       </Box>
     </div>
