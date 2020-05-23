@@ -16,7 +16,7 @@ const Cafe = ({ justifyCont }) => {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.";
 
   return (
-    <Paper style={{ height: "100vh" }}>
+    <Paper style={{ height: "100vh" }} id="Cafe">
       <div className={`vertical-align-middle ${justifyCont}`}>
         <InfoText title="cafe" size={size} text={text} hClass="h1-right" />
         <SectionPhoto image="../images/coffe/coffe-main.jpg" />

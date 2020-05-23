@@ -17,7 +17,7 @@ const Espacio = ({ justifyCont }) => {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.";
 
   return (
-    <Paper style={{ height: "100vh" }} elevation={0}>
+    <Paper style={{ height: "100vh" }} elevation={0} id="Espacio">
       <div className={`vertical-align-middle ${justifyCont}`}>
         <InfoText
           title="espacio"

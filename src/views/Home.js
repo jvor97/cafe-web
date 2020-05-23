@@ -21,7 +21,7 @@ const styles = theme => ({
 
 const Home = ({ classes, justifyCont }) => {
   return (
-    <Paper>
+    <Paper id="Home">
       <Navbar />
       <HorizontalLines />
       <div

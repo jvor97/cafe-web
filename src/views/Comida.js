@@ -17,7 +17,7 @@ const Comida = ({ justifyCont }) => {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.";
 
   return (
-    <Paper style={{ height: "100vh" }}>
+    <Paper style={{ height: "100vh" }} id="Comida">
       <div className={`vertical-align-middle ${justifyCont}`}>
         <SectionPhoto image="../images/food/food-main.jpg" />
         <InfoText title="comida" size={size} text={text} hClass="h1-left" />

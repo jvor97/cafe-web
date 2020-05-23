@@ -36,7 +36,7 @@ const Contact = ({ classes, justifyCont, ...props }) => {
     "lun.-vie.: 8:30–21:00 \nvie.-sab.: 8:30–00:00 \ndom.: 8:30-21.00 \n\nRESERVACIONES: \n610 56 23 90 \nmanager@cafenomad.com";
 
   return (
-    <Paper style={{ position: "relative" }} elevation={0} id="contacto">
+    <Paper style={{ position: "relative" }} elevation={0} id="Contacto">
       <div className="vertical-align-middle" style={{ padding: "5% 0" }}>
         <div className={classes.photoBackground}>
           <div className={classes.mainPhotoDiv}>

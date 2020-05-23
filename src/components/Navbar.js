@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
 import Hidden from "@material-ui/core/Hidden";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -9,14 +8,9 @@ import Toolbar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import { withStyles } from "@material-ui/styles";
+import { Link } from "react-scroll";
 
-const menuItems = [
-  { name: "Home", href: "#home" },
-  { name: "Cafe", href: "#cafe" },
-  { name: "Comida", href: "#comida" },
-  { name: "Espacio", href: "#espacio" },
-  { name: "Contacto", href: "#contacto" }
-];
+const menuItems = ["Home", "Cafe", "Comida", "Espacio", "Contacto"];
 
 //@TODO style link in mui theme
 const styles = theme => ({
@@ -46,12 +40,10 @@ const Navbar = ({ classes, ...props }) => {
             onClose={() => setAnchorElNav(null)}
           >
             {menuItems.map(item => (
-              <MenuItem
-                alt={item.name}
-                key={item.name}
-                style={{ padding: "1rem" }}
-              >
-                <Link href={item.href}>{item.name}</Link>
+              <MenuItem alt={item} key={item} style={{ padding: "1rem" }}>
+                <Link to={item} smooth={true} duration={500}>
+                  {item}
+                </Link>
               </MenuItem>
             ))}
           </Menu>
@@ -59,12 +51,10 @@ const Navbar = ({ classes, ...props }) => {
 
         <Hidden only={["xs", "sm"]}>
           {menuItems.map(item => (
-            <Typography
-              alt={item.name}
-              key={item.name}
-              style={{ padding: "1rem" }}
-            >
-              <Link href={item.href}>{item.name}</Link>
+            <Typography alt={item} key={item} style={{ padding: "1rem" }}>
+              <Link to={item} smooth={true} duration={500}>
+                {item}
+              </Link>
             </Typography>
           ))}
         </Hidden>
