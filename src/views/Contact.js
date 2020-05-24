@@ -29,7 +29,7 @@ const styles = theme => ({
 const Contact = ({ classes, justifyCont, ...props }) => {
   const size = {
     height: "24rem",
-    width: "34.3rem"
+    width: "33.4rem"
   };
 
   const text =

@@ -19,8 +19,8 @@ const Comida = ({ justifyCont }) => {
   return (
     <Paper style={{ height: "100vh" }} id="Comida">
       <div className={`vertical-align-middle ${justifyCont}`}>
-        <SectionPhoto image="../images/food/food-main.jpg" />
         <InfoText title="comida" size={size} text={text} hClass="h1-left" />
+        <SectionPhoto image="../images/food/food-main.jpg" />
         <FilmPhoto
           rotate={{ transform: "rotate(-180deg)" }}
           photos="../images/food/food"

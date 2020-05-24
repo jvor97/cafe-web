@@ -19,14 +19,14 @@ const styles = theme => ({
   }
 });
 
-const Home = ({ classes, justifyCont }) => {
+const Home = ({ classes }) => {
   return (
-    <Paper id="Home">
+    <Paper id="Home" elevation={0}>
       <Navbar />
       <HorizontalLines />
       <div
-        className={`vertical-align-middle ${justifyCont}`}
-        style={{ height: "100vh", marginTop: "-96px" }}
+        className="vertical-align-middle"
+        style={{ height: "100vh", marginTop: "-96px", marginLeft: "8.4rem" }}
       >
         <SectionPhoto image="../images/nomad.jpg" />
         <div style={{ width: "50%", marginLeft: "2.8rem" }}>

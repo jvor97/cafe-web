@@ -33,3 +33,4 @@ const Cafe = ({ justifyCont }) => {
 };
 
 export default Cafe;
+

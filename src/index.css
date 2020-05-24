@@ -32,8 +32,9 @@ a:hover {
   position: relative;
 }
 
-.flex-start {
-  justify-content: flex-start;
+.flex-reverse {
+  flex-direction: row-reverse;
+  margin-right: 0 !important;
   margin-left: 8.4rem;
 }
 
