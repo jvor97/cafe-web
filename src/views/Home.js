@@ -2,6 +2,7 @@ import React from "react";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
+import { Link } from "react-scroll";
 
 import Navbar from "../components/Navbar";
 import SectionPhoto from "../components/SectionPhoto";
@@ -33,15 +34,16 @@ const Home = ({ classes }) => {
           <Typography variant="h1">Cafe Nomad</Typography>
         </div>
         <div className={classes.arrowBackground}>
-          <ArrowShort
-            style={{
-              transform: "rotate(90deg) translate(31.5%)",
-              right: "-5rem"
-            }}
-          />
+          <Link to={"Cafe"} smooth={true} duration={500}>
+            <ArrowShort
+              style={{
+                transform: "rotate(90deg) translate(31.5%)",
+                right: "-5rem"
+              }}
+            />
+          </Link>
         </div>
       </div>
-      {/* <Arrow /> */}
     </Paper>
   );
 };

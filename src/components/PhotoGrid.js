@@ -1,39 +1,21 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 
-const styles = theme => ({
-  wrapper: {
-    position: "absolute"
-  },
-  outerBox: {
-    background: "#e7e3dc",
-    paddingRight: "2.3rem",
-    paddingLeft: 0
-  },
-  innerBox: {
-    width: "8.75rem",
-    height: "8.75rem"
+const useStyles = makeStyles({
+  gridList: {
+    background: "#004A2F",
+    padding: "1rem 0",
+    margin: 0
   }
 });
 
-const PhotoGrid = ({
-  classes,
-  rotate,
-  rotateBox,
-  photos,
-  position,
-  ...props
-}) => {
+const PhotoGrid = (...props) => {
+  const classes = useStyles();
   return (
-    <div>
-      <GridList
-        className={classes.gridList}
-        cols={5}
-        spacing={12}
-        style={{ background: "#004A2F", padding: "1rem 0", margin: 0 }}
-      >
+    <div style={{ overflow: "hidden" }}>
+      <GridList className={classes.gridList} cols={5} spacing={12}>
         {[1, 2, 3, 4, 5].map(num => (
           <GridListTile key={num} style={{ height: "25rem" }}>
             <img
@@ -47,4 +29,4 @@ const PhotoGrid = ({
   );
 };
 
-export default withStyles(styles)(PhotoGrid);
+export default PhotoGrid;

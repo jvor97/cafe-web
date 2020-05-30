@@ -37,7 +37,7 @@ const Contact = ({ classes, justifyCont, ...props }) => {
 
   return (
     <Paper style={{ position: "relative" }} elevation={0} id="Contacto">
-      <div className="vertical-align-middle" style={{ padding: "5% 0" }}>
+      <div className="vertical-align-middle" style={{ padding: "10% 0" }}>
         <div className={classes.photoBackground}>
           <div className={classes.mainPhotoDiv}>
             <div className="img-cover">
@@ -67,7 +67,7 @@ const Contact = ({ classes, justifyCont, ...props }) => {
         <ArrowShort
           style={{
             transform: "rotate(90deg) translate(35.5%)",
-            top: "-3%",
+            top: "-1.4%",
             right: "-3%"
           }}
         />
